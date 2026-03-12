@@ -13,20 +13,9 @@ A Java-based tool to decrypt and export FreeOTP Android backup files. Supports e
 - ✅ Import JSON back to FreeOTP backup format
 - ✅ Debug mode for troubleshooting
 
-## Requirements
-
-- Java 11 or higher
-- Maven 3.6 or higher
-
-## Building
-
-```bash
-mvn clean package
-```
-
-This creates `target/freeotp-dump-1.0-SNAPSHOT-jar-with-dependencies.jar`
-
 ## Usage
+
+Grab jar file from [Releases](https://github.com/akostadinov/freeotp-export/releases) or see the [Building](#building)
 
 ### Basic Decryption and Display
 
@@ -139,6 +128,19 @@ Displays all entries in the backup file for manual inspection.
 - **KEK Derivation**: PBKDF2-HMAC-SHA512, 100,000 iterations, salt.length * 8 bits
 - **Token Encryption**: AES-256-GCM with AAD (Additional Authenticated Data)
 - **AAD**: Token algorithm name (e.g., "AES", "HmacSHA1")
+
+## Building
+
+### Requirements
+
+- Java 11 or higher
+- Maven 3.6 or higher
+
+```bash
+mvn clean package
+```
+
+This creates `target/freeotp-dump-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 ## Troubleshooting
 
