@@ -96,15 +96,6 @@ Or use `printf` to avoid trailing newlines:
 printf '%s' "your-password" | java -jar freeotp-dump-1.0-SNAPSHOT-jar-with-dependencies.jar backup.xml
 ```
 
-### Dump Backup Contents
-
-```bash
-javac DumpBackup.java
-java DumpBackup backup.xml
-```
-
-Displays all entries in the backup file for manual inspection.
-
 ## Command-Line Options
 
 | Option | Description |
